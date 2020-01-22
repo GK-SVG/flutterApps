@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
+import 'drink_details.dart';
 import 'package:http/http.dart' as http;
 class HomePage extends StatefulWidget {
   @override
@@ -28,24 +29,30 @@ fetchdata()async{
             backgroundColor: Colors.greenAccent,
             appBar: AppBar(
               title: new Text('Cocktail App',),
-              backgroundColor: Colors.blueAccent,
+              backgroundColor: Colors.green,
             ),
             body: Center(
               child: res != null ? ListView.builder(
                         itemCount: drinks.length,
                         itemBuilder: (context, index){
-                         return ListTile(
-                           leading: CircleAvatar(
-                           //  backgroundImage: NetworkImage(drinks["strDrinkThumb"],
-                            // ),
-                           ),
-                            title: Text('${drinks[index]["strDrink"]}',
-                            style: TextStyle(
-                              fontSize: 22,
-                              color: Colors.orange
+                         return Hero(
+                           tag: drinks[index]['idDrink'],
+                          child: ListTile(
+                             leading: CircleAvatar(
+                               backgroundImage: NetworkImage(drinks[index]["strDrinkThumb"],
+                               ),
+                             ),
+                              title: Text('${drinks[index]["strDrink"]}',
+                              style: TextStyle(
+                                color: Colors.orange
+                              ),
                             ),
-                          ),
-                        );
+                            onTap:() { Navigator.push(context, MaterialPageRoute(
+                              builder: (context) => DrinkDetails(drink: drinks[index],)
+                            ));
+                            }
+                        ),
+                         );
                       },
                     )
                       :CircularProgressIndicator(),
