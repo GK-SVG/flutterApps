@@ -38,6 +38,13 @@ class _HomepageState extends State<Homepage> {
       t1.text='';
     });
   }
+  void doEql(){
+    setState(() {
+      num1 = int.parse(t1.text);
+      sum = num1;
+      t1.text='';
+    });
+  }
   void clear(){
     setState(() {
       sum=0;
@@ -60,35 +67,45 @@ class _HomepageState extends State<Homepage> {
               children: <Widget>[
                    TextField(
                      controller: t1,
+                     style: TextStyle(fontSize: 20.0),
                   ),  
-                  
+                  Padding(
+                    padding: EdgeInsets.only(top: 10.0),
+                  ),
                   new Row(
                     children: <Widget>[
-                      new Text('OUTPUT : $sum',)
+                      new Text('OUTPUT : $sum',style: TextStyle(fontSize: 20.0),)
                     ],
                   ) ,
+                  Padding(
+                    padding: EdgeInsets.only(top: 8.0),
+                  ),
                   new Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
                       new RaisedButton(
-                        child: new Text('+'),
+                        child: new Text('+',style:TextStyle(fontSize: 25.0),),
                         onPressed: doAdd,
                       ),
                       new RaisedButton(
-                        child: new Text('-'),
+                        child: new Text('-',style:TextStyle(fontSize: 25.0),),
                         onPressed: doSub,
-                      )
+                      ),
+                      new RaisedButton(
+                        child: new Text('=',style:TextStyle(fontSize: 25.0),),
+                        onPressed: doEql,
+                      ),
                     ],
                   ),
                   new Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
                       new RaisedButton(
-                        child: new Text('*'),
+                        child: new Text('*',style:TextStyle(fontSize: 25.0),),
                         onPressed: doMul,
                       ),
                       new RaisedButton(
-                        child: new Text('/'),
+                        child: new Text('/',style:TextStyle(fontSize: 25.0),),
                         onPressed: doDiv,
                       ),
                        new RaisedButton(
