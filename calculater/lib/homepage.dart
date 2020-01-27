@@ -100,10 +100,11 @@ class _HomepageState extends State<Homepage> {
                   new Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
-                      new RaisedButton(
-                        child: new Text('*',style:TextStyle(fontSize: 25.0),),
-                        onPressed: doMul,
-                      ),
+                       new RaisedButton(
+                         child: new Text('*',style:TextStyle(fontSize: 25.0),),
+                         onPressed: doMul,
+                        ),
+                      
                       new RaisedButton(
                         child: new Text('/',style:TextStyle(fontSize: 25.0),),
                         onPressed: doDiv,
