@@ -24,36 +24,42 @@ fetchdata()async{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-            backgroundColor: Colors.greenAccent,
+           // backgroundColor: Colors.greenAccent,
             appBar: AppBar(
               title: new Text('Cocktail App',),
-              backgroundColor: Colors.green,
+              backgroundColor: Colors.orange,
             ),
-            body: Center(
-              child: res != null ? ListView.builder(
-                        itemCount: drinks.length,
-                        itemBuilder: (context, index){
-                         return Hero(
-                           tag: drinks[index]['idDrink'],
-                          child: ListTile(
-                             leading: CircleAvatar(
-                               backgroundImage: NetworkImage(drinks[index]["strDrinkThumb"],
+            body: Container(
+              decoration: BoxDecoration(
+           gradient: LinearGradient(colors: [Colors.orangeAccent,Colors.redAccent])
+         ),
+              child: Center(
+                child: res != null ? ListView.builder(
+                          itemCount: drinks.length,
+                          itemBuilder: (context, index){
+                           return Hero(
+                             tag: drinks[index]['idDrink'],
+                            child: ListTile(
+                               leading: CircleAvatar(
+                                 backgroundImage: NetworkImage(drinks[index]["strDrinkThumb"],
+                                 ),
                                ),
-                             ),
-                              title: Text('${drinks[index]["strDrink"]}',
-                              style: TextStyle(
-                                color: Colors.orange
+                                title: Text('${drinks[index]["strDrink"]}',
+                                style: TextStyle(
+                                  color: Colors.white
+
+                                ),
                               ),
-                            ),
-                            onTap:() { Navigator.push(context, MaterialPageRoute(
-                              builder: (context) => DrinkDetails(drink: drinks[index],)
-                            ));
-                            }
-                        ),
-                         );
-                      },
-                    )
-                      :CircularProgressIndicator(),
+                              onTap:() { Navigator.push(context, MaterialPageRoute(
+                                builder: (context) => DrinkDetails(drink: drinks[index],)
+                              ));
+                              }
+                          ),
+                           );
+                        },
+                      )
+                        :CircularProgressIndicator(),
+              ),
             ),
     );
   }

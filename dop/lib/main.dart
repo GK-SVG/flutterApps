@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'homepage.dart';
+const Color mycolor = Colors.green;
 void main() {
   runApp(MyApp());
 }
