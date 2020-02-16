@@ -1,4 +1,4 @@
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import "package:curvednavigationbar/curvednavigationbar.dart";
 import 'History.dart';
 import 'Setting.dart';
 import 'profile.dart';
@@ -19,7 +19,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: CurvedNavigationBar(
+    bottomNavigationBar: CurvedNavigationBar(
     backgroundColor: Colors.blueAccent,
     items: <Widget>[
       Icon(Icons.person, size: 30),
