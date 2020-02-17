@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class Tajmahal extends StatefulWidget {
+class Colosseum extends StatefulWidget {
   @override
-  _TajmahalState createState() => _TajmahalState();
+  _ColosseumState createState() => _ColosseumState();
 }
 
-class _TajmahalState extends State<Tajmahal> {
+class _ColosseumState extends State<Colosseum> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

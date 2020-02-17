@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:seven_wonder/christ.dart';
+import 'package:seven_wonder/colosseum.dart';
+import 'package:seven_wonder/itza.dart';
+import 'package:seven_wonder/machu-pichu.dart';
+import 'package:seven_wonder/petra.dart';
 import 'package:seven_wonder/tajmahal.dart';
+import 'package:seven_wonder/wallofchina.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -34,7 +40,127 @@ class _HomeState extends State<Home> {
                   ));
                   },  
                   //shape: RoundedRectangleBorder(side: BorderSide(color: Colors.amberAccent),),
-                  child: Text("TAJMAHAL" , style: TextStyle(fontSize: 40),
+                  child: Text("TAJMAHAL" , style: TextStyle(fontSize: 30),
+                 ), 
+
+                 ),),
+              ),
+               new Container(
+                height: 100,
+                width: 360,
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.brown)
+                ),
+                child: Center(
+                  child: RaisedButton(
+                  color: Colors.amberAccent,
+                  onPressed:(){
+                    Navigator.push(context, MaterialPageRoute(
+                    builder: (context) => Wallofchina()
+                  ));
+                  },  
+                  //shape: RoundedRectangleBorder(side: BorderSide(color: Colors.amberAccent),),
+                  child: Text("WALLOF-CHINA" , style: TextStyle(fontSize: 30),
+                 ), 
+
+                 ),),
+              ),
+              new Container(
+                height: 100,
+                width: 360,
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.brown)
+                ),
+                child: Center(
+                  child: RaisedButton(
+                  color: Colors.amberAccent,
+                  onPressed:(){
+                    Navigator.push(context, MaterialPageRoute(
+                    builder: (context) => Colosseum()
+                  ));
+                  },  
+                  //shape: RoundedRectangleBorder(side: BorderSide(color: Colors.amberAccent),),
+                  child: Text("COLOSSEUM" , style: TextStyle(fontSize: 30),
+                 ), 
+
+                 ),),
+              ),
+              new Container(
+                height: 100,
+                width: 360,
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.brown)
+                ),
+                child: Center(
+                  child: RaisedButton(
+                  color: Colors.amberAccent,
+                  onPressed:(){
+                    Navigator.push(context, MaterialPageRoute(
+                    builder: (context) => Petra()
+                  ));
+                  },  
+                  //shape: RoundedRectangleBorder(side: BorderSide(color: Colors.amberAccent),),
+                  child: Text("PETRA" , style: TextStyle(fontSize: 30),
+                 ), 
+
+                 ),),
+              ),
+              new Container(
+                height: 100,
+                width: 360,
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.brown)
+                ),
+                child: Center(
+                  child: RaisedButton(
+                  color: Colors.amberAccent,
+                  onPressed:(){
+                    Navigator.push(context, MaterialPageRoute(
+                    builder: (context) => Itza()
+                  ));
+                  },  
+                  //shape: RoundedRectangleBorder(side: BorderSide(color: Colors.amberAccent),),
+                  child: Text("ITZA" , style: TextStyle(fontSize: 30),
+                 ), 
+
+                 ),),
+              ),
+              new Container(
+                height: 100,
+                width: 360,
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.brown)
+                ),
+                child: Center(
+                  child: RaisedButton(
+                  color: Colors.amberAccent,
+                  onPressed:(){
+                    Navigator.push(context, MaterialPageRoute(
+                    builder: (context) => Christ()
+                  ));
+                  },  
+                  //shape: RoundedRectangleBorder(side: BorderSide(color: Colors.amberAccent),),
+                  child: Text("CHRIST" , style: TextStyle(fontSize: 30),
+                 ), 
+
+                 ),),
+              ),
+              new Container(
+                height: 100,
+                width: 360,
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.brown)
+                ),
+                child: Center(
+                  child: RaisedButton(
+                  color: Colors.amberAccent,
+                  onPressed:(){
+                    Navigator.push(context, MaterialPageRoute(
+                    builder: (context) => MachuPichu()
+                  ));
+                  },  
+                  //shape: RoundedRectangleBorder(side: BorderSide(color: Colors.amberAccent),),
+                  child: Text("MACHU-PICHU" , style: TextStyle(fontSize: 30),
                  ), 
 
                  ),),

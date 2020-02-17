@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
-class Tajmahal extends StatefulWidget {
+class Wallofchina extends StatefulWidget {
   @override
-  _TajmahalState createState() => _TajmahalState();
+  _WallofchinaState createState() => _WallofchinaState();
 }
 
-class _TajmahalState extends State<Tajmahal> {
+class _WallofchinaState extends State<Wallofchina> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.amber,
       appBar: AppBar(
         backgroundColor: Colors.amber,
-        title: Text('Tajmahal',),
+        title: Text('WallofChina',),
       ),
       body: new ListView(
         children: <Widget>[
@@ -21,7 +22,7 @@ class _TajmahalState extends State<Tajmahal> {
               new Container(
                 height: 300,
                 width: 400,
-                child: Image.asset('assets/tajmahal.jpeg'),
+                child: Image.asset('assets/wallofchina.jpeg'),
               ),
               new Container(
                 height: 640,
@@ -30,42 +31,42 @@ class _TajmahalState extends State<Tajmahal> {
                     new Container(
                       height:80,
                       width:400,
-                      child:Text('Location        AGRA, UP, INDIA',style: TextStyle(fontWeight:  FontWeight.bold),)
+                      child:Text('Location          CHINA',style: TextStyle(fontWeight:  FontWeight.bold),)
                     ),
                     new Container(
                       height:80,
                       width:400,
-                      child:Text('Area              17 Hectares',style: TextStyle(fontWeight:  FontWeight.bold),)
+                      child:Text('BuildBy:           MING-DYNASTY/OTHER-EMPIRES',style: TextStyle(fontWeight:  FontWeight.bold),)
                     ),
                     new Container(
                       height:80,
                       width:400,
-                      child:Text('BuildBy:             KING SHAHJHA',style: TextStyle(fontWeight:  FontWeight.bold),)
+                      child:Text('Size                   21,196KM',style: TextStyle(fontWeight:  FontWeight.bold),)
                     ),
                     new Container(
                       height:80,
                       width:400,
-                      child:Text('BuildIn:             1632-53',style: TextStyle(fontWeight:  FontWeight.bold),)
+                      child:Text('BuildIn:             1368-1644 ',style: TextStyle(fontWeight:  FontWeight.bold),)
                     ),
                     new Container(
                       height:80,
                       width:400,
-                      child:Text('Build For       QUEEN MUMTAJ',style: TextStyle(fontWeight:  FontWeight.bold),)
+                      child:Text('Build For          STATE-SEFATY',style: TextStyle(fontWeight:  FontWeight.bold),)
                     ),
                     new Container(
                       height:80,
                       width:400,
-                      child:Text('Architect       USTAD AHMED LAHAURI',style: TextStyle(fontWeight:  FontWeight.bold),)
+                      child:Text('Architect          NOT PERTICULAR',style: TextStyle(fontWeight:  FontWeight.bold),)
                     ),
                     new Container(
                       height:80,
                       width:400,
-                      child:Text('Architectural style MUGAL ARCHITECHTURE',style: TextStyle(fontWeight:  FontWeight.bold),)
+                      child:Text('Architectural style CHINISE',style: TextStyle(fontWeight:  FontWeight.bold),)
                     ),
                     new Container(
                       height:80,
                       width:400,
-                      child:Text('Website       www.tajmahal.gov.in',style: TextStyle(fontWeight:  FontWeight.bold),)
+                      child:Text('Website ',style: TextStyle(fontWeight:  FontWeight.bold),)
                     )
                 ],),
               )
