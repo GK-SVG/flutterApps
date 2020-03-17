@@ -12,7 +12,7 @@ class _PetraState extends State<Petra> {
       backgroundColor: Colors.amber,
       appBar: AppBar(
         backgroundColor: Colors.amber,
-        title: Text('Tajmahal',),
+        title: Text('Petra',),
       ),
       body: new ListView(
         children: <Widget>[
@@ -21,7 +21,7 @@ class _PetraState extends State<Petra> {
               new Container(
                 height: 300,
                 width: 400,
-                child: Image.asset('assets/tajmahal.jpeg'),
+                child: Image.asset('assets/petra.jpeg'),
               ),
               new Container(
                 height: 640,
@@ -30,42 +30,42 @@ class _PetraState extends State<Petra> {
                     new Container(
                       height:80,
                       width:400,
-                      child:Text('Location        AGRA, UP, INDIA',style: TextStyle(fontWeight:  FontWeight.bold),)
+                      child:Text('Location        MAAN GOVERNORATE , JORDAN',style: TextStyle(fontWeight:  FontWeight.bold),)
                     ),
                     new Container(
                       height:80,
                       width:400,
-                      child:Text('Area              17 Hectares',style: TextStyle(fontWeight:  FontWeight.bold),)
+                      child:Text('Area              264squre KM',style: TextStyle(fontWeight:  FontWeight.bold),)
                     ),
                     new Container(
                       height:80,
                       width:400,
-                      child:Text('BuildBy:             KING SHAHJHA',style: TextStyle(fontWeight:  FontWeight.bold),)
+                      child:Text('BuildBy:             NABATAEANS',style: TextStyle(fontWeight:  FontWeight.bold),)
                     ),
                     new Container(
                       height:80,
                       width:400,
-                      child:Text('BuildIn:             1632-53',style: TextStyle(fontWeight:  FontWeight.bold),)
+                      child:Text('BuildIn:             5th century BC',style: TextStyle(fontWeight:  FontWeight.bold),)
                     ),
                     new Container(
                       height:80,
                       width:400,
-                      child:Text('Build For       QUEEN MUMTAJ',style: TextStyle(fontWeight:  FontWeight.bold),)
+                      child:Text('Build For       ',style: TextStyle(fontWeight:  FontWeight.bold),)
                     ),
                     new Container(
                       height:80,
                       width:400,
-                      child:Text('Architect       USTAD AHMED LAHAURI',style: TextStyle(fontWeight:  FontWeight.bold),)
+                      child:Text('Architect       NABATAEANS',style: TextStyle(fontWeight:  FontWeight.bold),)
                     ),
                     new Container(
                       height:80,
                       width:400,
-                      child:Text('Architectural style MUGAL ARCHITECHTURE',style: TextStyle(fontWeight:  FontWeight.bold),)
+                      child:Text('Architectural style NABATAEANS',style: TextStyle(fontWeight:  FontWeight.bold),)
                     ),
                     new Container(
                       height:80,
                       width:400,
-                      child:Text('Website       www.tajmahal.gov.in',style: TextStyle(fontWeight:  FontWeight.bold),)
+                      child:Text('Website       ',style: TextStyle(fontWeight:  FontWeight.bold),)
                     )
                 ],),
               )

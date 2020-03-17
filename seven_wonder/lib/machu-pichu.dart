@@ -12,7 +12,7 @@ class _MachuPichuState extends State<MachuPichu> {
       backgroundColor: Colors.amber,
       appBar: AppBar(
         backgroundColor: Colors.amber,
-        title: Text('Tajmahal',),
+        title: Text('Machu-Pichu',),
       ),
       body: new ListView(
         children: <Widget>[
@@ -21,7 +21,7 @@ class _MachuPichuState extends State<MachuPichu> {
               new Container(
                 height: 300,
                 width: 400,
-                child: Image.asset('assets/tajmahal.jpeg'),
+                child: Image.asset('assets/machu-pichu.jpg'),
               ),
               new Container(
                 height: 640,
@@ -30,42 +30,42 @@ class _MachuPichuState extends State<MachuPichu> {
                     new Container(
                       height:80,
                       width:400,
-                      child:Text('Location        AGRA, UP, INDIA',style: TextStyle(fontWeight:  FontWeight.bold),)
+                      child:Text('Location        Cuzco,PERU',style: TextStyle(fontWeight:  FontWeight.bold),)
                     ),
                     new Container(
                       height:80,
                       width:400,
-                      child:Text('Area              17 Hectares',style: TextStyle(fontWeight:  FontWeight.bold),)
+                      child:Text('Height           2423meter',style: TextStyle(fontWeight:  FontWeight.bold),)
                     ),
                     new Container(
                       height:80,
                       width:400,
-                      child:Text('BuildBy:             KING SHAHJHA',style: TextStyle(fontWeight:  FontWeight.bold),)
+                      child:Text('BuildBy:            Pachacuti Inca Yupanqui',style: TextStyle(fontWeight:  FontWeight.bold),)
                     ),
                     new Container(
                       height:80,
                       width:400,
-                      child:Text('BuildIn:             1632-53',style: TextStyle(fontWeight:  FontWeight.bold),)
+                      child:Text('BuildIn:             1572',style: TextStyle(fontWeight:  FontWeight.bold),)
                     ),
                     new Container(
                       height:80,
                       width:400,
-                      child:Text('Build For       QUEEN MUMTAJ',style: TextStyle(fontWeight:  FontWeight.bold),)
+                      child:Text('Build For       INCA',style: TextStyle(fontWeight:  FontWeight.bold),)
                     ),
                     new Container(
                       height:80,
                       width:400,
-                      child:Text('Architect       USTAD AHMED LAHAURI',style: TextStyle(fontWeight:  FontWeight.bold),)
+                      child:Text('Architect       Hiram Bingham',style: TextStyle(fontWeight:  FontWeight.bold),)
                     ),
                     new Container(
                       height:80,
                       width:400,
-                      child:Text('Architectural style MUGAL ARCHITECHTURE',style: TextStyle(fontWeight:  FontWeight.bold),)
+                      child:Text('Architectural style  Latin&Carbian',style: TextStyle(fontWeight:  FontWeight.bold),)
                     ),
                     new Container(
                       height:80,
                       width:400,
-                      child:Text('Website       www.tajmahal.gov.in',style: TextStyle(fontWeight:  FontWeight.bold),)
+                      child:Text('Website       ',style: TextStyle(fontWeight:  FontWeight.bold),)
                     )
                 ],),
               )

@@ -12,7 +12,7 @@ class _ColosseumState extends State<Colosseum> {
       backgroundColor: Colors.amber,
       appBar: AppBar(
         backgroundColor: Colors.amber,
-        title: Text('Tajmahal',),
+        title: Text('Colosseum',),
       ),
       body: new ListView(
         children: <Widget>[
@@ -21,7 +21,7 @@ class _ColosseumState extends State<Colosseum> {
               new Container(
                 height: 300,
                 width: 400,
-                child: Image.asset('assets/tajmahal.jpeg'),
+                child: Image.asset('assets/colosseum.jpeg'),
               ),
               new Container(
                 height: 640,
@@ -30,37 +30,37 @@ class _ColosseumState extends State<Colosseum> {
                     new Container(
                       height:80,
                       width:400,
-                      child:Text('Location        AGRA, UP, INDIA',style: TextStyle(fontWeight:  FontWeight.bold),)
+                      child:Text('Location        ROME, ITALY',style: TextStyle(fontWeight:  FontWeight.bold),)
                     ),
                     new Container(
                       height:80,
                       width:400,
-                      child:Text('Area              17 Hectares',style: TextStyle(fontWeight:  FontWeight.bold),)
+                      child:Text('Area              2 Hectares',style: TextStyle(fontWeight:  FontWeight.bold),)
                     ),
                     new Container(
                       height:80,
                       width:400,
-                      child:Text('BuildBy:             KING SHAHJHA',style: TextStyle(fontWeight:  FontWeight.bold),)
+                      child:Text('BuildBy:             Vespasian',style: TextStyle(fontWeight:  FontWeight.bold),)
                     ),
                     new Container(
                       height:80,
                       width:400,
-                      child:Text('BuildIn:             1632-53',style: TextStyle(fontWeight:  FontWeight.bold),)
+                      child:Text('BuildIn:             70-80AD',style: TextStyle(fontWeight:  FontWeight.bold),)
                     ),
                     new Container(
                       height:80,
                       width:400,
-                      child:Text('Build For       QUEEN MUMTAJ',style: TextStyle(fontWeight:  FontWeight.bold),)
+                      child:Text('Build For       Titus',style: TextStyle(fontWeight:  FontWeight.bold),)
                     ),
                     new Container(
                       height:80,
                       width:400,
-                      child:Text('Architect       USTAD AHMED LAHAURI',style: TextStyle(fontWeight:  FontWeight.bold),)
+                      child:Text('Architect       Vespasian',style: TextStyle(fontWeight:  FontWeight.bold),)
                     ),
                     new Container(
                       height:80,
                       width:400,
-                      child:Text('Architectural style MUGAL ARCHITECHTURE',style: TextStyle(fontWeight:  FontWeight.bold),)
+                      child:Text('Architectural style  Amphitheatre',style: TextStyle(fontWeight:  FontWeight.bold),)
                     ),
                     new Container(
                       height:80,
